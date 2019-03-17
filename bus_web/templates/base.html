@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      body{
+
+      }
+      .my-container{
+        border: solid 2px;
+      }
+      .my-row{
+        border: solid 0px;
+      }
+      .my-col{
+        border: solid 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-container">
+
+      <div class="row my-row" style="height: 40px">
+        <div class="col my-col">
+          <p>login</p>
+        </div>
+      </div>
+
+      <div class="row my-row" style="height: 200px">
+        <div class="col my-col">
+          <p>banner</p>
+        </div>
+      </div>
+
+      <div class="row my-row" style="height: 40px">
+        <div class="col my-col">
+          <p>nav bar</p>
+        </div>
+      </div>
+
+      <div class="row my-row" style="height: 800px">
+        <div class="col-md-2 my-col">
+          <p>side nav</p>
+        </div>
+        <div class="col-md-8 my-col">
+              {% block content %}
+              {% endblock %}            
+        </div>
+        <div class="col-md-2 my-col">
+          <p>updates</p>
+        </div>
+      </div>
+
+      <div class="row my-row" style="height: 200px">
+        <div class="col my-col">
+          <p>footer</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </body>
+</html>
